@@ -1,0 +1,51 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herança e Especificidade</title>
+
+    <style type="text/css">
+
+        /*
+        #pagina p {
+            color: red !important;
+        }
+
+        #pagina p {
+            color: blue;
+        }*/
+
+        /*Se um seletor for mais específico que outro a regra naus específica será aplicada (terá precedência sobre regras mais gerais)*/
+        * {
+            color: red;
+        }
+
+        h2 {/*3*/
+            color: blue;
+        }
+
+        h2.verde {/*2*/
+            color: green;
+        }
+
+        h2#amarelo {/*1*/
+            color: yellow;
+            background: gray;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="pagina">
+
+        <h2 class="verde" id="amarelo">Lorem ipsum dolor, sit amet consectetur</h2>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque magnam sequi id odio voluptate quia nam cumque in, similique saepe suscipit velit nostrum explicabo dignissimos impedit molestiae ipsa natus repellendus!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque magnam sequi id odio voluptate quia nam cumque in, similique saepe suscipit velit nostrum explicabo dignissimos impedit molestiae ipsa natus repellendus!</p>
+
+    </div>
+    
+</body>
+</html>
